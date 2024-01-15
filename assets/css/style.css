@@ -869,6 +869,154 @@
 
 /* Product End */
 
+/* Working Process Start */
+
+#working_process {
+  padding: 0 0 100px;
+}
+
+.working_process_head h1 {
+  font-family: var(--primary_font);
+  font-size: 3em;
+  font-weight: 700;
+  color: var(--blue);
+  text-align: center;
+}
+
+.working_process_head p {
+  font-family: var(--secondary_font);
+  font-size: 1em;
+  font-weight: 500;
+  color: var(--black);
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 30px;
+}
+
+.working_card {
+  border: 2px solid var(--blue);
+  padding: 20px 10px;
+  border-radius: 30px 30px 30px 0px;
+  -webkit-border-radius: 30px 30px 30px 0px;
+  -moz-border-radius: 30px 30px 30px 0px;
+  -ms-border-radius: 30px 30px 30px 0px;
+  -o-border-radius: 30px 30px 30px 0px;
+  transition: 0.5s ease;
+  -webkit-transition: 0.5s ease;
+  -moz-transition: 0.5s ease;
+  -ms-transition: 0.5s ease;
+  -o-transition: 0.5s ease;
+  margin-top: 30px;
+}
+
+.working_card:hover {
+  border-radius: 30px 30px 0 30px;
+  -webkit-border-radius: 30px 30px 0 30px;
+  -moz-border-radius: 30px 30px 0 30px;
+  -ms-border-radius: 30px 30px 0 30px;
+  -o-border-radius: 30px 30px 0 30px;
+  box-shadow: 0px 0px 14px rgba(44, 47, 125, 0.3);
+}
+
+.working_card .card_icon {
+  width: 70px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--light_gold);
+  margin: auto;
+  border-radius: 50% 50% 50% 0;
+  -webkit-border-radius: 50% 50% 50% 0;
+  -moz-border-radius: 50% 50% 50% 0;
+  -ms-border-radius: 50% 50% 50% 0;
+  -o-border-radius: 50% 50% 50% 0;
+  transition: 0.5s ease;
+  -webkit-transition: 0.5s ease;
+  -moz-transition: 0.5s ease;
+  -ms-transition: 0.5s ease;
+  -o-transition: 0.5s ease;
+}
+
+.working_card:hover .card_icon {
+  border-radius: 50% 50% 0 50%;
+  -webkit-border-radius: 50% 50% 0 50%;
+  -moz-border-radius: 50% 50% 0 50%;
+  -ms-border-radius: 50% 50% 0 50%;
+  -o-border-radius: 50% 50% 0 50%;
+}
+
+.working_card .card_icon img {
+  width: 40px;
+}
+
+.working_card h2 {
+  font-family: var(--primary_font);
+  font-size: 1.7em;
+  color: var(--black);
+  font-weight: 700;
+  margin: 20px 0 15px;
+  text-align: center;
+}
+
+.working_card p {
+  font-family: var(--secondary_font);
+  font-size: 1em;
+  color: var(--black);
+  font-weight: 400;
+  margin: 0;
+  text-align: center;
+}
+
+/* Working Process End */
+
+/* Service Start */
+
+#service {
+  padding: 0 0 100px;
+}
+
+.service_content h1 {
+  font-family: var(--primary_font);
+  font-size: 3em;
+  color: var(--blue);
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.service_content p {
+  font-family: var(--secondary_font);
+  font-size: 1em;
+  color: var(--black);
+  margin-bottom: 25px;
+}
+
+.service_content .service_img img {
+  width: 80%;
+  float: right;
+}
+
+/* Service End */
+
+/* Brand Start */
+
+#brand {
+  padding: 0 0 100px;
+}
+
+.brand_card {
+  width: 100%;
+  height: 150px;
+}
+
+.brand_card img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* Brand End */
+
 /* Footer Start */
 
 #footer {
