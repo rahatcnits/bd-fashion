@@ -40,3 +40,78 @@ var swiper = new Swiper(".mySwiper", {
   //     clickable: true,
   //   },
 });
+
+// product item title animation
+const productItemTitle = document.querySelectorAll(".product_item_title");
+
+setInterval(() => {
+  productItemTitle.forEach((item) => {
+    if (item.classList.contains("active")) {
+      item.classList.remove("active");
+    } else {
+      item.classList.add("active");
+    }
+  });
+}, 5000);
+
+// about section observer
+const about = document.querySelector(".about");
+
+const aboutObserver = new IntersectionObserver(
+  (items) => {
+    items.forEach((item) => {
+      if (item.isIntersecting) {
+        item.target.classList.add("visible");
+      } else {
+        item.target.classList.remove("visible");
+      }
+    });
+  },
+  {
+    threshold: 0.6,
+  }
+);
+
+aboutObserver.observe(about);
+
+// about section observer
+const productMain = document.querySelector(".product_wrapper");
+
+const productMainObserver = new IntersectionObserver(
+  (items) => {
+    items.forEach((item) => {
+      if (item.isIntersecting) {
+        item.target.classList.add("visible");
+      } else {
+        item.target.classList.remove("visible");
+      }
+    });
+  },
+  {
+    threshold: 0.7,
+  }
+);
+
+productMainObserver.observe(productMain);
+
+// product section observer
+const productCategories = document.querySelectorAll(".product_category");
+
+const observerProductCategory = new IntersectionObserver(
+  (productCategories) => {
+    productCategories.forEach((productCategory) => {
+      if (productCategory.isIntersecting) {
+        productCategory.target.classList.add("visible");
+      } else {
+        productCategory.target.classList.remove("visible");
+      }
+    });
+  },
+  {
+    threshold: 0.6,
+  }
+);
+
+productCategories.forEach((productCategory) => {
+  observerProductCategory.observe(productCategory);
+});
