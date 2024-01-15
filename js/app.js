@@ -1,5 +1,5 @@
 // Navbar
-const menuBox = document.querySelector(".menu-item");
+const menuBox = document.querySelector(".mobile_menu_item");
 const navOpenBtn = document.querySelector(".nav-open");
 const closeBtn = document.querySelector(".close-btn");
 
@@ -68,7 +68,7 @@ const aboutObserver = new IntersectionObserver(
     });
   },
   {
-    threshold: 0.6,
+    threshold: 0.2,
   }
 );
 
@@ -88,7 +88,7 @@ const productMainObserver = new IntersectionObserver(
     });
   },
   {
-    threshold: 0.7,
+    threshold: 0.2,
   }
 );
 
@@ -108,7 +108,7 @@ const observerProductCategory = new IntersectionObserver(
     });
   },
   {
-    threshold: 0.6,
+    threshold: 0.2,
   }
 );
 
