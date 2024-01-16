@@ -998,6 +998,108 @@
 
 /* Service End */
 
+/* Chose Start */
+
+#chose {
+  padding: 0 0 100px;
+}
+
+.chose_img_wrapper {
+  display: flex;
+  flex: 50%;
+  gap: 10px;
+}
+
+.chose_img img {
+  width: 100%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+}
+
+.chose_img_wrapper.active .chose_img_1 {
+  animation: bounch1 2s ease-in 1 2s forwards;
+  -webkit-animation: bounch1 2s ease-in 1 forwards;
+}
+
+.chose_img_wrapper.active .chose_img_4 {
+  animation: bounch2 2s ease-in 1 forwards;
+  -webkit-animation: bounch2 2s ease-in 1 2s forwards;
+}
+
+@keyframes bounch1 {
+  0% {
+    transform: translate(0);
+    -webkit-transform: translate(0);
+    -moz-transform: translate(0);
+    -ms-transform: translate(0);
+    -o-transform: translate(0);
+  }
+
+  50% {
+    transform: translate(-15px, -15px);
+    -webkit-transform: translate(-15px, -15px);
+    -moz-transform: translate(-15px, -15px);
+    -ms-transform: translate(-15px, -15px);
+    -o-transform: translate(-15px, -15px);
+  }
+
+  100% {
+    transform: translate(0);
+    -webkit-transform: translate(0);
+    -moz-transform: translate(0);
+    -ms-transform: translate(0);
+    -o-transform: translate(0);
+  }
+}
+
+@keyframes bounch2 {
+  0% {
+    transform: translate(0);
+    -webkit-transform: translate(0);
+    -moz-transform: translate(0);
+    -ms-transform: translate(0);
+    -o-transform: translate(0);
+  }
+
+  50% {
+    transform: translate(15px, 15px);
+    -webkit-transform: translate(15px, 15px);
+    -moz-transform: translate(15px, 15px);
+    -ms-transform: translate(15px, 15px);
+    -o-transform: translate(15px, 15px);
+  }
+
+  100% {
+    transform: translate(0);
+    -webkit-transform: translate(0);
+    -moz-transform: translate(0);
+    -ms-transform: translate(0);
+    -o-transform: translate(0);
+  }
+}
+
+.chose_img_2,
+.chose_img_4 {
+  margin-top: 10px;
+}
+
+.chose_content h1 {
+  font-family: var(--primary_font);
+  font-size: 3em;
+  color: var(--blue);
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.chose_content p {
+  font-family: var(--secondary_font);
+  font-size: 1em;
+  color: var(--black);
+  margin-bottom: 25px;
+}
+
+/* Chose End */
+
 /* Brand Start */
 
 #brand {

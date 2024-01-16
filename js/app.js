@@ -54,6 +54,17 @@ setInterval(() => {
   });
 }, 5000);
 
+// Choose Image animation
+const chooseImg = document.querySelector(".chose_img_wrapper");
+
+setInterval(() => {
+  if (chooseImg.classList.contains("active")) {
+    chooseImg.classList.remove("active");
+  } else {
+    chooseImg.classList.add("active");
+  }
+}, 5000);
+
 // about section observer
 const about = document.querySelector(".about");
 
