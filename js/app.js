@@ -85,7 +85,7 @@ const aboutObserver = new IntersectionObserver(
 
 aboutObserver.observe(about);
 
-// about section observer
+// product section observer
 const productMain = document.querySelector(".product_wrapper");
 
 const productMainObserver = new IntersectionObserver(
@@ -126,3 +126,63 @@ const observerProductCategory = new IntersectionObserver(
 productCategories.forEach((productCategory) => {
   observerProductCategory.observe(productCategory);
 });
+
+// work section observer
+const work = document.querySelector(".working_process");
+
+const workObserver = new IntersectionObserver(
+  (items) => {
+    items.forEach((item) => {
+      if (item.isIntersecting) {
+        item.target.classList.add("visible");
+      } else {
+        item.target.classList.remove("visible");
+      }
+    });
+  },
+  {
+    threshold: 0.2,
+  }
+);
+
+workObserver.observe(work);
+
+// service section observer
+const service = document.querySelector(".service");
+
+const serviceObserver = new IntersectionObserver(
+  (items) => {
+    items.forEach((item) => {
+      if (item.isIntersecting) {
+        item.target.classList.add("visible");
+      } else {
+        item.target.classList.remove("visible");
+      }
+    });
+  },
+  {
+    threshold: 0.2,
+  }
+);
+
+serviceObserver.observe(service);
+
+// service section observer
+const chose = document.querySelector(".chose");
+
+const choseObserver = new IntersectionObserver(
+  (items) => {
+    items.forEach((item) => {
+      if (item.isIntersecting) {
+        item.target.classList.add("visible");
+      } else {
+        item.target.classList.remove("visible");
+      }
+    });
+  },
+  {
+    threshold: 0.2,
+  }
+);
+
+choseObserver.observe(chose);
