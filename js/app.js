@@ -68,40 +68,30 @@ setInterval(() => {
 // about section observer
 const about = document.querySelector(".about");
 
-const aboutObserver = new IntersectionObserver(
-  (items) => {
-    items.forEach((item) => {
-      if (item.isIntersecting) {
-        item.target.classList.add("visible");
-      } else {
-        item.target.classList.remove("visible");
-      }
-    });
-  },
-  {
-    threshold: 0.2,
-  }
-);
+const aboutObserver = new IntersectionObserver((items) => {
+  items.forEach((item) => {
+    if (item.isIntersecting) {
+      item.target.classList.add("visible");
+    } else {
+      item.target.classList.remove("visible");
+    }
+  });
+});
 
 aboutObserver.observe(about);
 
 // product section observer
 const productMain = document.querySelector(".product_wrapper");
 
-const productMainObserver = new IntersectionObserver(
-  (items) => {
-    items.forEach((item) => {
-      if (item.isIntersecting) {
-        item.target.classList.add("visible");
-      } else {
-        item.target.classList.remove("visible");
-      }
-    });
-  },
-  {
-    threshold: 0.2,
-  }
-);
+const productMainObserver = new IntersectionObserver((items) => {
+  items.forEach((item) => {
+    if (item.isIntersecting) {
+      item.target.classList.add("visible");
+    } else {
+      item.target.classList.remove("visible");
+    }
+  });
+});
 
 productMainObserver.observe(productMain);
 
@@ -117,9 +107,6 @@ const observerProductCategory = new IntersectionObserver(
         productCategory.target.classList.remove("visible");
       }
     });
-  },
-  {
-    threshold: 0.2,
   }
 );
 
@@ -130,59 +117,149 @@ productCategories.forEach((productCategory) => {
 // work section observer
 const work = document.querySelector(".working_process");
 
-const workObserver = new IntersectionObserver(
-  (items) => {
-    items.forEach((item) => {
-      if (item.isIntersecting) {
-        item.target.classList.add("visible");
-      } else {
-        item.target.classList.remove("visible");
-      }
-    });
-  },
-  {
-    threshold: 0.2,
-  }
-);
+const workObserver = new IntersectionObserver((items) => {
+  items.forEach((item) => {
+    if (item.isIntersecting) {
+      item.target.classList.add("visible");
+    } else {
+      item.target.classList.remove("visible");
+    }
+  });
+});
 
 workObserver.observe(work);
 
 // service section observer
 const service = document.querySelector(".service");
 
-const serviceObserver = new IntersectionObserver(
-  (items) => {
-    items.forEach((item) => {
-      if (item.isIntersecting) {
-        item.target.classList.add("visible");
-      } else {
-        item.target.classList.remove("visible");
-      }
-    });
-  },
-  {
-    threshold: 0.2,
-  }
-);
+const serviceObserver = new IntersectionObserver((items) => {
+  items.forEach((item) => {
+    if (item.isIntersecting) {
+      item.target.classList.add("visible");
+    } else {
+      item.target.classList.remove("visible");
+    }
+  });
+});
 
 serviceObserver.observe(service);
 
-// service section observer
+// chose section observer
 const chose = document.querySelector(".chose");
 
-const choseObserver = new IntersectionObserver(
-  (items) => {
-    items.forEach((item) => {
-      if (item.isIntersecting) {
-        item.target.classList.add("visible");
-      } else {
-        item.target.classList.remove("visible");
-      }
-    });
-  },
-  {
-    threshold: 0.2,
-  }
-);
+const choseObserver = new IntersectionObserver((items) => {
+  items.forEach((item) => {
+    if (item.isIntersecting) {
+      item.target.classList.add("visible");
+    } else {
+      item.target.classList.remove("visible");
+    }
+  });
+});
 
 choseObserver.observe(chose);
+
+// showroom section observer
+const showroom = document.querySelector(".showroom");
+
+const showroomObserver = new IntersectionObserver((items) => {
+  items.forEach((item) => {
+    if (item.isIntersecting) {
+      item.target.classList.add("visible");
+    } else {
+      item.target.classList.remove("visible");
+    }
+  });
+});
+
+showroomObserver.observe(showroom);
+
+// sampleroom section observer
+const sampleroom = document.querySelector(".sampleroom");
+
+const sampleroomObserver = new IntersectionObserver((items) => {
+  items.forEach((item) => {
+    if (item.isIntersecting) {
+      item.target.classList.add("visible");
+    } else {
+      item.target.classList.remove("visible");
+    }
+  });
+});
+
+sampleroomObserver.observe(sampleroom);
+
+// management section observer
+const management = document.querySelector(".management");
+
+const managementObserver = new IntersectionObserver((items) => {
+  items.forEach((item) => {
+    if (item.isIntersecting) {
+      item.target.classList.add("visible");
+    } else {
+      item.target.classList.remove("visible");
+    }
+  });
+});
+
+managementObserver.observe(management);
+
+// strength section observer
+const strength = document.querySelector(".strength");
+
+const strengthObserver = new IntersectionObserver((items) => {
+  items.forEach((item) => {
+    if (item.isIntersecting) {
+      item.target.classList.add("visible");
+    } else {
+      item.target.classList.remove("visible");
+    }
+  });
+});
+
+strengthObserver.observe(strength);
+
+// merchandesign section observer
+const merchandesign = document.querySelector(".merchandesign");
+
+const merchandesignObserver = new IntersectionObserver((items) => {
+  items.forEach((item) => {
+    if (item.isIntersecting) {
+      item.target.classList.add("visible");
+    } else {
+      item.target.classList.remove("visible");
+    }
+  });
+});
+
+merchandesignObserver.observe(merchandesign);
+
+// commercial section observer
+const commercial = document.querySelector(".commercial");
+
+const commercialObserver = new IntersectionObserver((items) => {
+  items.forEach((item) => {
+    if (item.isIntersecting) {
+      item.target.classList.add("visible");
+    } else {
+      item.target.classList.remove("visible");
+    }
+  });
+});
+
+commercialObserver.observe(commercial);
+
+// qualityControl section observer
+const qualityControl = document.querySelector(".qualityControl");
+
+const qualityControlObserver = new IntersectionObserver((items) => {
+  items.forEach((item) => {
+    if (item.isIntersecting) {
+      item.target.classList.add("visible");
+    } else {
+      item.target.classList.remove("visible");
+    }
+  });
+});
+
+qualityControlObserver.observe(qualityControl);
