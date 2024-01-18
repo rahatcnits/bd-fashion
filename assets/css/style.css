@@ -184,6 +184,10 @@
     color: var(--white);
   }
 
+  .navbar_wrapper.active .nav-open {
+    color: var(--black);
+  }
+
   .close-btn {
     display: block;
     position: absolute;
