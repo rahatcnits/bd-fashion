@@ -264,7 +264,7 @@ const qualityControlObserver = new IntersectionObserver((items) => {
 
 qualityControlObserver.observe(qualityControl);
 
-//Get the button:
+//Back to Top button
 mybutton = document.getElementById("bt-top");
 
 // When the user scrolls down 20px from the top of the document, show the button
