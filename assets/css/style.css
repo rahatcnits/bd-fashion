@@ -20,6 +20,24 @@
   box-sizing: border-box;
 }
 
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: rgb(243, 243, 243);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--blue);
+  border-radius: 15px;
+  height: 60px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--light_gold);
+}
+
 /* Hero Start */
 
 /* Navbar Start */
@@ -2765,5 +2783,14 @@
   padding: 30px 0;
   text-align: center;
 }
+
+.back-top-icon {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  padding: 0 30px 30px 0;
+}
+
+
 
 /* Footer End */
