@@ -1022,6 +1022,10 @@
     font-size: 2em;
   }
 
+  .product_card_title {
+    margin: 70px 0 50px;
+  }
+
   .product_card .product_img::after {
     display: none;
   }
@@ -1628,6 +1632,7 @@
 @media screen and (max-width: 990px) {
   .chose_content h1 {
     font-size: 2em;
+    margin-top: 50px;
   }
 
   .chose_img_1,
@@ -2387,6 +2392,10 @@
     -moz-transform: translateX(0);
     -ms-transform: translateX(0);
     -o-transform: translateX(0);
+  }
+
+  .strength_content2 {
+    margin-top: 50px;
   }
 }
 
