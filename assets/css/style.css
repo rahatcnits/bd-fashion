@@ -58,7 +58,7 @@
 }
 
 .navbar_wrapper.active {
-  background-color: var(--white);
+  background-color: #fff;
   transition: 0.5s ease;
   -webkit-transition: 0.5s ease;
   -moz-transition: 0.5s ease;
@@ -2785,6 +2785,7 @@
 }
 
 .back-top-icon {
+  display: none;
   position: fixed;
   bottom: 0;
   right: 0;

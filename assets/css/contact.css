@@ -20,6 +20,23 @@
   box-sizing: border-box;
 }
 
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: rgb(243, 243, 243);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--blue);
+  border-radius: 15px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--light_gold);
+}
+
 /* Hero Start */
 
 /* Navbar Start */
@@ -55,6 +72,7 @@
   0% {
     top: -80px;
   }
+
   100% {
     top: 0;
   }
@@ -195,6 +213,7 @@
     right: 20px;
     cursor: pointer;
   }
+
   .close-btn i {
     color: var(--white);
     font-size: 1.3rem;
@@ -204,6 +223,7 @@
     display: block;
   }
 }
+
 /* Navbar End */
 
 /* Hero Slider */
@@ -390,6 +410,13 @@
   color: #a7a7a7;
   padding: 30px 0;
   text-align: center;
+}
+
+.back-top-icon {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  padding: 0 30px 30px 0;
 }
 
 /* Footer End */

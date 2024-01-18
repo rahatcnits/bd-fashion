@@ -15,6 +15,7 @@ closeBtn.addEventListener("click", () => {
 
 // when scroll to change navbar bg color
 const navbar = document.querySelector(".navbar_wrapper");
+const backToTopButton = document.getElementById("bt-top");
 window.onscroll = () => {
   if (
     document.body.scrollTop >= 200 ||
@@ -24,7 +25,24 @@ window.onscroll = () => {
   } else {
     navbar.classList.remove("active");
   }
+  function scrollFunc() {
+    if (
+      document.body.scrollTop > 300 ||
+      document.documentElement.scrollTop > 300
+    ) {
+      backToTopButton.style.display = "block";
+      backToTopButton.style.zIndex = 100;
+    } else {
+      backToTopButton.style.display = "none";
+    }
+  }
+  scrollFunc();
 };
+
+
+
+
+
 
 // hero slider
 var swiper = new Swiper(".mySwiper", {
@@ -264,22 +282,4 @@ const qualityControlObserver = new IntersectionObserver((items) => {
 
 qualityControlObserver.observe(qualityControl);
 
-//Back to Top button
-mybutton = document.getElementById("bt-top");
 
-// When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function () {
-  scrollFunction();
-};
-
-function scrollFunction() {
-  if (
-    document.body.scrollTop > 1000 ||
-    document.documentElement.scrollTop > 1000
-  ) {
-    mybutton.style.display = "block";
-    mybutton.style.zIndex = 100;
-  } else {
-    mybutton.style.display = "none";
-  }
-}
